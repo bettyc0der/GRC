@@ -92,14 +92,6 @@
       border: 0;
       background: white;
     }
-    .notice {
-      border-left: 4px solid var(--accent2);
-      background: rgba(158,230,196,.08);
-      padding: 14px 16px;
-      border-radius: 10px;
-      margin: 18px 0;
-    }
-    footer { color: var(--muted); margin-top: 34px; font-size: .92rem; }
   </style>
 </head>
 <body>
@@ -107,37 +99,33 @@
   <header>
     <div class="badge">Governance • Risk • Compliance</div>
     <h1>GRC Resource Hub</h1>
-    <p class="muted">Official standards, course-resource links, and original study materials for GRC coursework.</p>
+    <p class="muted">NIST, PCI DSS, course books, and study resources.</p>
   </header>
 
   <section>
-    <h2>Official Standards</h2>
+    <h2>Standards</h2>
     <div class="grid">
       <article class="card">
         <div class="badge">NIST</div>
         <h3>NIST SP 800-53 Rev. 5</h3>
-        <p>Security and Privacy Controls for Information Systems and Organizations. NIST's publication page also lists the current Release 5.2.0 supplemental update.</p>
+        <p>Security and Privacy Controls for Information Systems and Organizations.</p>
         <div class="buttons">
           <button class="btn" onclick="loadPdf('NIST SP 800-53 Rev. 5','https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf')">View PDF</button>
-          <a class="btn secondary" target="_blank" rel="noopener" href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">Official NIST Page</a>
+          <a class="btn secondary" target="_blank" rel="noopener" href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">NIST Page</a>
           <a class="btn secondary" target="_blank" rel="noopener" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf">Open PDF</a>
         </div>
       </article>
 
       <article class="card">
-        <div class="badge">PCI SSC</div>
+        <div class="badge">PCI DSS</div>
         <h3>PCI DSS v4.0.1</h3>
-        <p>Current Payment Card Industry Data Security Standard listed by the PCI Security Standards Council.</p>
+        <p>Payment Card Industry Data Security Standard.</p>
         <div class="buttons">
           <button class="btn" onclick="loadPdf('PCI DSS v4.0.1','https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0_1.pdf')">View PDF</button>
           <a class="btn secondary" target="_blank" rel="noopener" href="https://www.pcisecuritystandards.org/document_library/">PCI Document Library</a>
           <a class="btn secondary" target="_blank" rel="noopener" href="https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0_1.pdf">Open PDF</a>
         </div>
       </article>
-    </div>
-
-    <div class="notice">
-      <strong>Viewer note:</strong> Some official sites block third-party PDF embedding. If a document does not appear below, use its <strong>Open PDF</strong> or <strong>Official Page</strong> button.
     </div>
 
     <div class="viewer">
@@ -150,26 +138,18 @@
   </section>
 
   <section style="margin-top:30px">
-    <h2>Class Library & Study Materials</h2>
+    <h2>Class Resources</h2>
     <div class="grid">
       <article class="card">
         <h3>Course Books</h3>
-        <p>Use the <a href="books.html">Course Books & Legal Access</a> page for syllabus titles, publisher/library access, and guidance on what can be shared.</p>
+        <p><a href="books.html">View D486 Course Books</a></p>
       </article>
       <article class="card">
-        <h3>Original Notes & Study Guides</h3>
-        <p>Share your own notes, checklists, diagrams, templates, and study guides in the repository's <code>notes/</code> folder.</p>
-      </article>
-      <article class="card">
-        <h3>Official Public Resources</h3>
-        <p>Link to NIST, PCI SSC, CISA, federal regulations, and other official sources rather than copying restricted material.</p>
+        <h3>Notes & Study Guides</h3>
+        <p>Use the repository's <code>notes/</code> folder for notes, guides, diagrams, checklists, and templates.</p>
       </article>
     </div>
   </section>
-
-  <footer>
-    This is a student-created resource hub and is not an official WGU, NIST, or PCI SSC website.
-  </footer>
 </div>
 
 <script>
